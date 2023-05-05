@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Appointment Confirmation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+      }
+      h1 {
+        color: #1c1c1c;
+        text-align: center;
+      }
+      .appointment {
+        border: 1px solid #ccc;
+        background-color: #fff;
+        padding: 10px;
+        margin: 50px auto;
+        max-width: 550px;
+        box-shadow: 10px 10px 40px #1a1919;
+      }
+      .appointment p {
+        margin: 0 0 10px 0;
+      }
+      .button {
+        display: inline-block;
+        background-color: #00ff08;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 10px 0;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .button:hover {
+        background-color:blue;
+      }
+      body{
+        background-color: rgb(226, 200, 162);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="appointment">
+      <h1>Appointment Confirmation</h1>
+      <p>Your appointment has been scheduled for <strong>{{ time }}</strong> with <strong>{{ doctor }}</strong>.</p>
+      <p>Name: <strong>{{ name }}</strong></p>
+      <p>Phone: <strong>{{ phone }}</strong></p>
+      <a href="/" class="button">Go back to home page</a>
+    </div>
+  </body>
+</html>
